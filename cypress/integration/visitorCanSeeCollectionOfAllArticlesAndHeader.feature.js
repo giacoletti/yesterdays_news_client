@@ -24,7 +24,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .children()
       .first()
       .within(() => {
-        cy.get("[data-cy=article-collection-title]").should(
+        cy.get("[data-cy=article-title]").should(
           "contain",
           "Latin News"
         );
@@ -36,7 +36,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .children()
       .first()
       .within(() => {
-        cy.get("[data-cy=article-collection-body]").should(
+        cy.get("[data-cy=article-body]").should(
           "contain",
           "Lorem ipsum"
         );
@@ -48,7 +48,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .children()
       .first()
       .within(() => {
-        cy.get("[data-cy=article-collection-created]").should(
+        cy.get("[data-cy=article-created]").should(
           "contain",
           "2022-01-13T10:24:38.354Z"
         );
