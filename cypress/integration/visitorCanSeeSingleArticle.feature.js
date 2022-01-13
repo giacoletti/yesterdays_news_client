@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 describe("Visitor can see a single article", () => {
   before(() => {
-    cy.intercept("GET", "**/api/article/**", {
+    cy.intercept("GET", "**/api/articles/**", {
       fixture: "articleShowResponse.json",
     }).as("getArticle");
     cy.visit("/");
