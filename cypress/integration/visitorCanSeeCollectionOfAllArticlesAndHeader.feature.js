@@ -4,6 +4,7 @@ describe("Visitor can see a Header and list of articles", () => {
     cy.intercept("GET", "**/api/articles", {
       fixture: "articlesIndexResponse.json",
     }).as("getArticles");
+
     cy.visit("/");
   });
 
@@ -24,10 +25,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .children()
       .first()
       .within(() => {
-        cy.get("[data-cy=article-title]").should(
-          "contain",
-          "Latin News"
-        );
+        cy.get("[data-cy=article-title]").should("contain", "Latin News");
       });
   });
 
@@ -36,10 +34,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .children()
       .first()
       .within(() => {
-        cy.get("[data-cy=article-body]").should(
-          "contain",
-          "Lorem ipsum"
-        );
+        cy.get("[data-cy=article-body]").should("contain", "Lorem ipsum");
       });
   });
 

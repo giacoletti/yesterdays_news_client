@@ -10,12 +10,17 @@ const SingleArticle = () => {
     const data = await Articles.show(id);
     setArticle(data);
   };
-
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [id]);
 
-  return <div>blablabal</div>;
+  return (
+    <>
+      <h1 data-cy="article-title">{article?.title}</h1>
+      <h1 data-cy="article-body">{article?.body}</h1>
+      <h1 data-cy="article-created">{article?.created_at}</h1>
+    </>
+  );
 };
 
 export default SingleArticle;
