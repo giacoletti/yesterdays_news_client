@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Articles from "../modules/Articles";
 import useStyles from "../styles/styles";
-
 import {
   Typography,
   Container,
@@ -17,7 +16,7 @@ const ArticleCollection = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await Articles.index();
-      setArticles(data.articles);
+      setArticles(data);
     };
     fetchData();
   }, []);
@@ -27,22 +26,29 @@ const ArticleCollection = () => {
       <Container className={classes.cardGrid}>
         <Grid container spacing={4}>
           {articles.map((article) => (
-            <Grid
-              item
-              key={article.id}
-              xs={12}
-              sm={12}
-              md={12}
-              data-cy="article-collection"
-            >
+            <Grid item key={article.id} md={12} data-cy="article-collection">
               <Card className={classes.card}>
                 <CardContent className={classes.cardContent}>
                   <Typography
                     gutterBottom
-                    variant="h5"
+                    variant="h2"
                     data-cy="article-collection-title"
                   >
                     {article.title}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    data-cy="article-collection-body"
+                  >
+                    {article.body}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    data-cy="article-collection-created"
+                  >
+                    {article.created_at}
                   </Typography>
                 </CardContent>
               </Card>

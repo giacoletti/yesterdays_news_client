@@ -2,9 +2,13 @@
 describe("Visitor can see a Header and list of articles", () => {
   before(() => {
     cy.intercept("GET", "**/api/articles", {
-      fixture: "tempFixture.fixture.json",
-    });
+      fixture: "articlesIndexResponse.json",
+    }).as("getArticles");
     cy.visit("/");
+  });
+
+  it("is expected to make a GET request to the API", () => {
+    cy.wait("@getArticles").its("request.method").should("eq", "GET");
   });
 
   it("is expected to display Yesterday News Header", () => {
@@ -46,7 +50,7 @@ describe("Visitor can see a Header and list of articles", () => {
       .within(() => {
         cy.get("[data-cy=article-collection-created]").should(
           "contain",
-          "2021-12-07"
+          "2022-01-13T10:24:38.354Z"
         );
       });
   });
