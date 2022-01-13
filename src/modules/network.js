@@ -1,3 +1,3 @@
 import axios from "axios";
-
-export const api = axios.index({ baseURL: "http://localhost:3000/api" });
+debugger;
+export const api = axios.get({ baseURL: "http://localhost:3000/api" });

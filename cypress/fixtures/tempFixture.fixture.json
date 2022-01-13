@@ -1,25 +1,144 @@
 {
   "articles": [
     {
-      "id": 1,
+      "id": 360,
       "title": "Latin News",
       "body": "Lorem ipsum",
-      "created_at": "2021-12-07",
-      "updated_at": "2021-12-07"
+      "created_at": "2022-01-13T10:24:38.354Z",
+      "updated_at": "2022-01-13T10:24:38.354Z"
     },
     {
-      "id": 2,
-      "title": "Lovley news",
-      "body": "Hello my darling",
-      "created_at": "2021-12-20",
-      "updated_at": "2021-12-20"
+      "id": 359,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.351Z",
+      "updated_at": "2022-01-13T10:24:38.351Z"
     },
     {
-      "id": 3,
-      "title": "News news",
-      "body": "I'm a journalist",
-      "created_at": "2021-12-23",
-      "updated_at": "2021-12-23"
+      "id": 358,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.344Z",
+      "updated_at": "2022-01-13T10:24:38.344Z"
+    },
+    {
+      "id": 357,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.340Z",
+      "updated_at": "2022-01-13T10:24:38.340Z"
+    },
+    {
+      "id": 356,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.336Z",
+      "updated_at": "2022-01-13T10:24:38.336Z"
+    },
+    {
+      "id": 355,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.332Z",
+      "updated_at": "2022-01-13T10:24:38.332Z"
+    },
+    {
+      "id": 354,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 353,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 352,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 351,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 350,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 349,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 348,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 347,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 346,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 345,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 344,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 343,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 342,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
+    },
+    {
+      "id": 341,
+      "title": "Covid-19 is a pandemic",
+      "body": "MyText",
+      "created_at": "2022-01-13T10:24:38.329Z",
+      "updated_at": "2022-01-13T10:24:38.329Z"
     }
   ]
 }

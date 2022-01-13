@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 describe("Visitor can see a Header and list of articles", () => {
   before(() => {
     cy.intercept("GET", "**/api/articles", {
@@ -11,7 +12,7 @@ describe("Visitor can see a Header and list of articles", () => {
   });
 
   it("is expected to see a collection of articles", () => {
-    cy.get("[data-cy=article-collection]").children().should("have.length", 3);
+    cy.get("[data-cy=article-collection]").children().should("have.length", 20);
   });
 
   it("is expected to see article title", () => {
