@@ -2,8 +2,12 @@ import { api } from "./network";
 
 const Articles = {
   async index() {
-    const { data } = await api.get("/articles");
-    return data.articles;
+    try {
+      const { data } = await api.get("/articles");
+      return data.articles;
+    } catch (error) {
+      return error
+    }
   },
 };
 
