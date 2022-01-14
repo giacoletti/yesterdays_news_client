@@ -10,7 +10,8 @@ const NavigationBar = () => {
           <Typography
             data-cy="header"
             variant="h6"
-            component="div"
+            component={Link}
+            to="/"
             sx={{ flexGrow: 1 }}
           >
             Yesterdays News
