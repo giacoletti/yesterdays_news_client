@@ -1,9 +1,13 @@
 import { api } from "./network";
 
 const Articles = {
-  async index() {
+  async index(category) {
     try {
-      const { data } = await api.get("/articles");
+      const { data } = await api.get("/articles", {
+        params: {
+          category: category
+        }
+      });
       return data.articles;
     } catch (error) {
       return error;
