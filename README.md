@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Yesterdays News (client)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Maintainability](https://api.codeclimate.com/v1/badges/6b968a3fc1fc097bccb4/maintainability)](https://codeclimate.com/github/CraftAcademy/yesterdays_news_client/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6b968a3fc1fc097bccb4/test_coverage)](https://codeclimate.com/github/CraftAcademy/yesterdays_news_client/test_coverage)
 
 ## Available Scripts
 
