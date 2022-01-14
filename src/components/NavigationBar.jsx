@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   AppBar,
   Box,
@@ -16,9 +17,11 @@ const NavigationBar = () => {
           <Typography data-cy="header" variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Yesterdays News
           </Typography>
-          <Button color="inherit">Sports</Button>
-          <Button color="inherit">Politics</Button>
-          <Button color="inherit">Economy</Button>
+          <Button data-cy="sports-view"
+            component={Link} to="/sports" color="inherit">Sports</Button>
+          <Button data-cy="politics-view"
+            component={Link} to="/politics" color="inherit">Politics</Button>
+          <Button component={Link} to="/economy" color="inherit">Economy</Button>
         </Toolbar>
       </AppBar>
     </Box>

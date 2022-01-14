@@ -10,6 +10,7 @@ const App = () => {
       <NavigationBar/>
       <Routes>
         <Route path="/" element={<ArticleCollection />} />
+        <Route path="/:category" element={<ArticleCollection />} />
         <Route path="articles/:id" element={<SingleArticle />} />
       </Routes>
     </>
