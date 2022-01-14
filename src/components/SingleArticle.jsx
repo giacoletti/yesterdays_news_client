@@ -6,12 +6,12 @@ const SingleArticle = () => {
   const [article, setArticle] = useState();
   const { id } = useParams();
 
-  const fetchData = async () => {
+  const fetchArticle = async () => {
     const data = await Articles.show(id);
     setArticle(data);
   };
   useEffect(() => {
-    fetchData();
+    fetchArticle();
   }, [id]);
 
   return (
