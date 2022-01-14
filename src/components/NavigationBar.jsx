@@ -4,9 +4,7 @@ import {
   Box,
   Toolbar,
   Typography,
-  Button,
-  Menu,
-  MenuItem
+  Button
 } from '@mui/material';
 
 const NavigationBar = () => {
@@ -15,13 +13,9 @@ const NavigationBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+          <Typography data-cy="header" variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Yesterdays News
           </Typography>
-          <Menu>
-            <MenuItem>
-            </MenuItem>
-          </Menu>
           <Button color="inherit">Sports</Button>
           <Button color="inherit">Politics</Button>
           <Button color="inherit">Economy</Button>
