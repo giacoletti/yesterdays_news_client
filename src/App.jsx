@@ -8,7 +8,6 @@ const App = () => {
   return (
     <>
       <NavigationBar/>
-      <h1 data-cy="header">Yesterdays News</h1>
       <Routes>
         <Route path="/" element={<ArticleCollection />} />
         <Route path="articles/:id" element={<SingleArticle />} />
