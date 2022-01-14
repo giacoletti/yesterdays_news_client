@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import Articles from '../modules/Articles';
-import ArticleCard from './ArticleCard';
-import useStyles from '../styles/styles';
-import { Grid, Container } from '@material-ui/core';
+import React, { useState, useEffect } from "react";
+import Articles from "../modules/Articles";
+import ArticleCard from "./ArticleCard";
+import useStyles from "../styles/styles";
+import { Grid, Container } from "@material-ui/core";
 
 const ArticleCollection = () => {
   const classes = useStyles();
   const [articles, setArticles] = useState([]);
 
-  const fetchData = async () => {
+  const fetchArticles = async () => {
     const data = await Articles.index();
     setArticles(data);
   };
   useEffect(() => {
-    fetchData();
+    fetchArticles();
   }, []);
 
   const collectionOfArticles = articles.map((article) => {
