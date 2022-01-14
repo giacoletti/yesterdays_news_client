@@ -12,5 +12,21 @@ blocks:
           commands:
             - sem-version node 16.13.2
             - checkout
+            - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
+            - chmod +x ./cc-test-reporter
+            - ./cc-test-reporter before-build
             - yarn install
             - 'yarn cypress:ci'
+      env_vars:
+        - name: CC_TEST_REPORTER_ID
+          value: 637dc906199dbbc423423df76052e3639bc42ed67513e4470204d9f8ac9817b4
+      epilogue:
+        always:
+          commands:
+            - ./cc-test-reporter format-coverage -t lcov
+        on_pass:
+          commands:
+            - ./cc-test-reporter after-build --exit-code 0
+        on_fail:
+          commands:
+            - ./cc-test-reporter after-build --exit-code 1
