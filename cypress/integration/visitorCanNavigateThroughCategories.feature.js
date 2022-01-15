@@ -71,7 +71,7 @@ describe("A user visiting the application can display articles by categories", (
       cy.wait("@sportsArticles").its("request.method").should("eq", "GET");
     });
 
-    it("is expected to see politics article title", () => {
+    it("is expected to see sports article title", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
@@ -82,7 +82,7 @@ describe("A user visiting the application can display articles by categories", (
         });
     });
 
-    it("is expected to see politics article body", () => {
+    it("is expected to see sports article body", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
@@ -93,7 +93,7 @@ describe("A user visiting the application can display articles by categories", (
         });
     });
 
-    it("is expected to see politics article creation date", () => {
+    it("is expected to see sports article creation date", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
@@ -128,7 +128,7 @@ describe("A user visiting the application can display articles by categories", (
         });
     });
 
-    it("is expected to see politics article body", () => {
+    it("is expected to see economy article body", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
@@ -139,7 +139,7 @@ describe("A user visiting the application can display articles by categories", (
         });
     });
 
-    it("is expected to see politics article creation date", () => {
+    it("is expected to see economy article creation date", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
