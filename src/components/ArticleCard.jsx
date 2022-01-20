@@ -1,10 +1,12 @@
 import React from "react";
-import { Typography, CardContent, Card } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Typography, CardContent, Card, CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const ArticleCard = ({ article }) => {
+  const navigate = useNavigate();
+
   return (
-    <Link to={"/articles/" + article.id}>
+    <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
       <Card>
         <CardContent>
           <Typography gutterBottom variant="h2" data-cy="article-title">
@@ -18,7 +20,7 @@ const ArticleCard = ({ article }) => {
           </Typography>
         </CardContent>
       </Card>
-    </Link>
+    </CardActionArea>
   );
 };
 
