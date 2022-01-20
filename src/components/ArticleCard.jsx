@@ -6,8 +6,8 @@ const ArticleCard = ({ article }) => {
   const navigate = useNavigate();
 
   return (
-    <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
-      <Card>
+    <Card>
+      <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
         <CardContent>
           <Typography gutterBottom variant="h2" data-cy="article-title">
             {article.title}
@@ -19,8 +19,8 @@ const ArticleCard = ({ article }) => {
             {article.created_at}
           </Typography>
         </CardContent>
-      </Card>
-    </CardActionArea>
+      </CardActionArea>
+    </Card>
   );
 };
 
