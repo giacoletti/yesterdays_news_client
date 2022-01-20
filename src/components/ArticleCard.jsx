@@ -1,14 +1,12 @@
 import React from "react";
-import useStyles from "../styles/styles";
-import { Typography, CardContent, Card } from "@material-ui/core";
+import { Typography, CardContent, Card } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const ArticleCard = ({ article }) => {
-  const classes = useStyles();
   return (
     <Link to={"/articles/" + article.id}>
-      <Card className={classes.card}>
-        <CardContent className={classes.cardContent}>
+      <Card>
+        <CardContent>
           <Typography gutterBottom variant="h2" data-cy="article-title">
             {article.title}
           </Typography>
