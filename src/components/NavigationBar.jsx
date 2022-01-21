@@ -12,7 +12,7 @@ const NavigationBar = () => {
             variant="h6"
             component={Link}
             to="/"
-            sx={{ flexGrow: 1 }}
+            sx={{ flexGrow: 1, textDecoration: 'none', color: 'white' }}
           >
             Yesterdays News
           </Typography>

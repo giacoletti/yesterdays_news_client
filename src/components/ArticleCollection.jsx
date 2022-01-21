@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Articles from "../modules/Articles";
 import ArticleCard from "./ArticleCard";
-import useStyles from "../styles/styles";
-import { Grid, Container } from "@material-ui/core";
+import { Grid, Container } from "@mui/material";
 
 const ArticleCollection = () => {
   const { category } = useParams();
-  const classes = useStyles();
   const [articles, setArticles] = useState([]);
 
   const fetchArticles = async () => {
@@ -27,7 +25,7 @@ const ArticleCollection = () => {
   });
 
   return (
-    <Container className={classes.cardGrid}>
+    <Container sx={{ padding: "20px 0" }}>
       <Grid container spacing={4} data-cy="article-collection">
         {collectionOfArticles}
       </Grid>

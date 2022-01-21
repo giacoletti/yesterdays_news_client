@@ -1,14 +1,14 @@
 import React from "react";
-import useStyles from "../styles/styles";
-import { Typography, CardContent, Card } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Typography, CardContent, Card, CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const ArticleCard = ({ article }) => {
-  const classes = useStyles();
+  const navigate = useNavigate();
+
   return (
-    <Link to={"/articles/" + article.id}>
-      <Card className={classes.card}>
-        <CardContent className={classes.cardContent}>
+    <Card>
+      <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
+        <CardContent>
           <Typography gutterBottom variant="h2" data-cy="article-title">
             {article.title}
           </Typography>
@@ -19,8 +19,8 @@ const ArticleCard = ({ article }) => {
             {article.created_at}
           </Typography>
         </CardContent>
-      </Card>
-    </Link>
+      </CardActionArea>
+    </Card>
   );
 };
 
