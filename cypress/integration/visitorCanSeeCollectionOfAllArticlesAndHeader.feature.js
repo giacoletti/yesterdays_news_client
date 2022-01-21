@@ -38,7 +38,7 @@ describe("Visitor can see a Header and list of articles", () => {
       });
   });
 
-  it("is expected to see article body", () => {
+  it("is expected to see article creation date", () => {
     cy.get("[data-cy=article-collection]")
       .children()
       .first()
