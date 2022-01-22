@@ -10,7 +10,9 @@ const ArticleCollection = () => {
 
   const fetchArticles = async () => {
     const data = await Articles.index(category);
-    setArticles(data);
+    if (!data.message) {
+      setArticles(data);
+    }
   };
   useEffect(() => {
     fetchArticles();
