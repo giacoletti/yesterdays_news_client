@@ -1,39 +1,32 @@
 {
   "articles": [
     {
-      "id": 482,
-      "title": "Biggest financial crisis ever",
-      "body": "Tips and trics how not to become poor",
-      "created_at": "2021-12-10T10:24:38.354Z",
-      "updated_at": "2022-01-13T10:24:38.354Z"
+      "id": 12,
+      "title": "I Will Fear No Evil",
+      "teaser": "Language designers want to design the perfect language. They...",
+      "published": "2022-01-23T12:02:56.166Z",
+      "category": "Economy"
     },
     {
-      "id": 359,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.351Z",
-      "updated_at": "2022-01-13T10:24:38.351Z"
+      "id": 11,
+      "title": "Blood's a Rover",
+      "teaser": "The orthogonal features, when combined, can explode into com...",
+      "published": "2022-01-23T12:02:56.160Z",
+      "category": "Economy"
     },
     {
-      "id": 353,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
+      "id": 10,
+      "title": "The Man Within",
+      "teaser": "I believe consistency and orthogonality are tools of design,...",
+      "published": "2022-01-23T12:02:56.156Z",
+      "category": "Economy"
     },
     {
-      "id": 432,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
-    },
-    {
-      "id": 358,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
+      "id": 9,
+      "title": "Bury My Heart at Wounded Knee",
+      "teaser": "Because of the Turing completeness theory, everything one Tu...",
+      "published": "2022-01-23T12:02:56.143Z",
+      "category": "Economy"
     }
   ]
 }

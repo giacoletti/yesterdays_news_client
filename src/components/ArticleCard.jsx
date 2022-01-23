@@ -12,11 +12,11 @@ const ArticleCard = ({ article }) => {
           <Typography gutterBottom variant="h2" data-cy="article-title">
             {article.title}
           </Typography>
-          <Typography gutterBottom variant="h5" data-cy="article-body">
-            {article.body}
+          <Typography gutterBottom variant="h5" data-cy="article-teaser">
+            {article.teaser}
           </Typography>
           <Typography gutterBottom variant="h6" data-cy="article-created">
-            {article.created_at}
+            {article.published}
           </Typography>
         </CardContent>
       </CardActionArea>

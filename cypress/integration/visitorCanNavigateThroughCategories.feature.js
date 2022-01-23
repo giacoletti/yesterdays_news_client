@@ -22,7 +22,7 @@ describe("A user visiting the application can display articles by categories", (
     it("is expected to see a collection of articles", () => {
       cy.get("[data-cy=article-collection]")
         .children()
-        .should("have.length", 20);
+        .should("have.length", 4);
     });
 
     it("is expected to see politics article title", () => {
@@ -31,18 +31,18 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Putin and Trump")
+            .should("contain.text", "Quo Vadis")
             .and("be.visible");
         });
     });
 
-    it("is expected to see politics article body", () => {
+    it("is expected to see politics article teaser", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-body]")
-            .should("contain.text", "Shocking news, USA and Russia are...")
+          cy.get("[data-cy=article-teaser]")
+            .should("contain.text", "Man is driven to create; I know I really love to create thin...")
             .and("be.visible");
         });
     });
@@ -53,7 +53,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2022-01-13T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.139Z")
             .and("be.visible");
         });
     });
@@ -77,18 +77,18 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Ronaldo and Messi")
+            .should("contain.text", "A Many-Splendoured Thing")
             .and("be.visible");
         });
     });
 
-    it("is expected to see sports article body", () => {
+    it("is expected to see sports article teaser", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-body]")
-            .should("contain.text", "Champions of whatever")
+          cy.get("[data-cy=article-teaser]")
+            .should("contain.text", "I didn't work hard to make Ruby perfect for everyone, becaus...")
             .and("be.visible");
         });
     });
@@ -99,7 +99,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2021-12-13T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.125Z")
             .and("be.visible");
         });
     });
@@ -123,18 +123,18 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Biggest financial crisis ever")
+            .should("contain.text", "I Will Fear No Evil")
             .and("be.visible");
         });
     });
 
-    it("is expected to see economy article body", () => {
+    it("is expected to see economy article teaser", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-body]")
-            .should("contain.text", "Tips and trics how not to become poor")
+          cy.get("[data-cy=article-teaser]")
+            .should("contain.text", "Language designers want to design the perfect language. They...")
             .and("be.visible");
         });
     });
@@ -145,7 +145,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2021-12-10T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.166Z")
             .and("be.visible");
         });
     });
@@ -172,16 +172,10 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-title]").should("contain", "Latin News");
-        });
-    });
-
-    it("is expected to see article body", () => {
-      cy.get("[data-cy=article-collection]")
-        .children()
-        .first()
-        .within(() => {
-          cy.get("[data-cy=article-body]").should("contain", "Lorem ipsum");
+          cy.get("[data-cy=article-title]").should(
+            "contain",
+            "The Doors of Perception"
+          );
         });
     });
 
@@ -190,10 +184,7 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-created]").should(
-            "contain",
-            "2022-01-13T10:24:38.354Z"
-          );
+          cy.get("[data-cy=article-created]").should("contain", "2022-01-23T12:02:56.183Z");
         });
     });
   });

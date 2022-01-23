@@ -1,39 +1,32 @@
 {
   "articles": [
     {
-      "id": 482,
-      "title": "Ronaldo and Messi",
-      "body": "Champions of whatever",
-      "created_at": "2021-12-13T10:24:38.354Z",
-      "updated_at": "2022-01-13T10:24:38.354Z"
+      "id": 4,
+      "title": "A Many-Splendoured Thing",
+      "teaser": "I didn't work hard to make Ruby perfect for everyone, becaus...",
+      "published": "2022-01-23T12:02:56.125Z",
+      "category": "Sports"
     },
     {
-      "id": 359,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.351Z",
-      "updated_at": "2022-01-13T10:24:38.351Z"
+      "id": 3,
+      "title": "The Doors of Perception",
+      "teaser": "Everyone has an individual background. Someone may come from...",
+      "published": "2022-01-23T12:02:56.122Z",
+      "category": "Sports"
     },
     {
-      "id": 353,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
+      "id": 2,
+      "title": "The Millstone",
+      "teaser": "Ruby inherited the Perl philosophy of having more than one w...",
+      "published": "2022-01-23T12:02:56.119Z",
+      "category": "Sports"
     },
     {
-      "id": 432,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
-    },
-    {
-      "id": 358,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
+      "id": 1,
+      "title": "The Grapes of Wrath",
+      "teaser": "Often people, especially computer engineers, focus on the ma...",
+      "published": "2022-01-23T12:02:56.115Z",
+      "category": "Sports"
     }
   ]
 }
