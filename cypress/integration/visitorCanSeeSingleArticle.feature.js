@@ -23,7 +23,11 @@ describe("Visitor can see a single article", () => {
     cy.get("[data-cy=article-title]").should("contain", "The Grapes of Wrath");
   });
 
+  it("is expected to see article body", () => {
+    cy.get("[data-cy=article-body]").should("contain", "Often people, especially computer engineers, focus on the machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines.");
+  });
+
   it("is expected to see article published date", () => {
-    cy.get("[data-cy=article-created]").should("contain", "2022-01-23");
+    cy.get("[data-cy=article-created]").should("contain", "2022-01-23T12:02:56.183Z");
   });
 });

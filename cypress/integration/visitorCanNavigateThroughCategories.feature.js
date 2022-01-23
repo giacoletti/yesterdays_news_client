@@ -25,26 +25,13 @@ describe("A user visiting the application can display articles by categories", (
         .should("have.length", 4);
     });
 
-    it("is expected to see teaser teaser", () => {
-      cy.get("[data-cy=article-collection]")
-        .children()
-        .first()
-        .within(() => {
-          cy.get("[data-cy=article-teaser]")
-            .should(
-              "contain.text",
-              "Shocking news, USA and Russia are..."
-            )
-        });
-    });
-
     it("is expected to see politics article title", () => {
       cy.get("[data-cy=article-collection]")
         .children()
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Putin and Trump")
+            .should("contain.text", "Quo Vadis")
             .and("be.visible");
         });
     });
@@ -55,7 +42,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-teaser]")
-            .should("contain.text", "Shocking news, USA and Russia are...")
+            .should("contain.text", "Man is driven to create; I know I really love to create thin...")
             .and("be.visible");
         });
     });
@@ -66,7 +53,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2022-01-13T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.139Z")
             .and("be.visible");
         });
     });
@@ -90,7 +77,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Ronaldo and Messi")
+            .should("contain.text", "A Many-Splendoured Thing")
             .and("be.visible");
         });
     });
@@ -101,7 +88,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-teaser]")
-            .should("contain.text", "Champions of whatever")
+            .should("contain.text", "I didn't work hard to make Ruby perfect for everyone, becaus...")
             .and("be.visible");
         });
     });
@@ -112,7 +99,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2021-12-13T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.125Z")
             .and("be.visible");
         });
     });
@@ -136,7 +123,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-title]")
-            .should("contain.text", "Biggest financial crisis ever")
+            .should("contain.text", "I Will Fear No Evil")
             .and("be.visible");
         });
     });
@@ -147,7 +134,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-teaser]")
-            .should("contain.text", "Tips and trics how not to become poor")
+            .should("contain.text", "Language designers want to design the perfect language. They...")
             .and("be.visible");
         });
     });
@@ -158,7 +145,7 @@ describe("A user visiting the application can display articles by categories", (
         .first()
         .within(() => {
           cy.get("[data-cy=article-created]")
-            .should("contain.text", "2021-12-10T10:24:38.354Z")
+            .should("contain.text", "2022-01-23T12:02:56.166Z")
             .and("be.visible");
         });
     });
@@ -197,7 +184,7 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-created]").should("contain", "2022-01-23");
+          cy.get("[data-cy=article-created]").should("contain", "2022-01-23T12:02:56.183Z");
         });
     });
   });
