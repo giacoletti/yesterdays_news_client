@@ -16,7 +16,7 @@ const ArticleCard = ({ article }) => {
             {article.body}
           </Typography>
           <Typography gutterBottom variant="h6" data-cy="article-created">
-            {article.created_at}
+            {article.published}
           </Typography>
         </CardContent>
       </CardActionArea>

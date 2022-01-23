@@ -20,25 +20,18 @@ describe('Visitor can visit the application and', () => {
     it('is expected to see a collection of articles', () => {
       cy.get('[data-cy=article-collection]')
         .children()
-        .should('have.length', 20);
+        .should('have.length', 16);
     });
 
     it('is expected to see article title', () => {
       cy.get('[data-cy=article-collection]').children().first().within(() => {
-        cy.get('[data-cy=article-title]').should('contain', 'Latin News');
+        cy.get('[data-cy=article-title]').should('contain', 'The Doors of Perception');
       });
     });
 
-    it('is expected to see article body', () => {
+      it('is expected to see article creation date', () => {
       cy.get('[data-cy=article-collection]').children().first().within(() => {
-        cy.get('[data-cy=article-body]').should('contain', 'Lorem ipsum');
-      });
-    });
-
-    it('is expected to see article creation date', () => {
-      cy.get('[data-cy=article-collection]').children().first().within(() => {
-        cy.get('[data-cy=article-created]')
-          .should('contain', '2022-01-13T10:24:38.354Z');
+        cy.get('[data-cy=article-created]').should('contain', '2022-01-23');
       });
     });
   });

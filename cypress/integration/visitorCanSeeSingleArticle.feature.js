@@ -16,14 +16,14 @@ describe("Visitor can see a single article", () => {
   });
 
   it("is expected to display correct url", () => {
-    cy.url().should("contain", "360");
+    cy.url().should("contain", "1");
   });
 
   it("is expected to see article title", () => {
-    cy.get("[data-cy=article-title]").should("contain", "Latin News");
+    cy.get("[data-cy=article-title]").should("contain", "The Grapes of Wrath");
   });
 
   it("is expected to see article published date", () => {
-    cy.get("[data-cy=article-created]").should("contain", "2022-01-13");
+    cy.get("[data-cy=article-created]").should("contain", "2022-01-23");
   });
 });

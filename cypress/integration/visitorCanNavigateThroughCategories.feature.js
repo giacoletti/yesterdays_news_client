@@ -22,7 +22,7 @@ describe("A user visiting the application can display articles by categories", (
     it("is expected to see a collection of articles", () => {
       cy.get("[data-cy=article-collection]")
         .children()
-        .should("have.length", 20);
+        .should("have.length", 4);
     });
 
     it("is expected to see politics article title", () => {
@@ -172,16 +172,10 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-title]").should("contain", "Latin News");
-        });
-    });
-
-    it("is expected to see article body", () => {
-      cy.get("[data-cy=article-collection]")
-        .children()
-        .first()
-        .within(() => {
-          cy.get("[data-cy=article-body]").should("contain", "Lorem ipsum");
+          cy.get("[data-cy=article-title]").should(
+            "contain",
+            "The Doors of Perception"
+          );
         });
     });
 
@@ -190,10 +184,7 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-created]").should(
-            "contain",
-            "2022-01-13T10:24:38.354Z"
-          );
+          cy.get("[data-cy=article-created]").should("contain", "2022-01-23");
         });
     });
   });
