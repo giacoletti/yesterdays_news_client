@@ -3,25 +3,25 @@
     {
       "id": 360,
       "title": "Putin and Trump",
-      "body": "Shocking news, USA and Russia are...",
+      "teaser": "Shocking news, USA and Russia are...",
       "published": "2022-01-13T10:24:38.354Z"
     },
     {
       "id": 359,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.351Z"
     },
     {
       "id": 358,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.344Z"
     },
     {
       "id": 357,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.340Z"
     }
   ]

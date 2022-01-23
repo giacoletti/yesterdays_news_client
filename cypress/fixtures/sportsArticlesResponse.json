@@ -3,31 +3,31 @@
     {
       "id": 482,
       "title": "Ronaldo and Messi",
-      "body": "Champions of whatever",
+      "teaser": "Champions of whatever",
       "published": "2021-12-13T10:24:38.354Z"
     },
     {
       "id": 359,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.351Z"
     },
     {
       "id": 353,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.344Z"
     },
     {
       "id": 432,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.344Z"
     },
     {
       "id": 358,
       "title": "Covid-19 is a pandemic",
-      "body": "MyText",
+      "teaser": "MyText",
       "published": "2022-01-13T10:24:38.344Z"
     }
   ]
