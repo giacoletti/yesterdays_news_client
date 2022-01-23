@@ -1,144 +1,28 @@
 {
   "articles": [
     {
-      "id": 360,
-      "title": "Putin and Trump",
-      "body": "Shocking news, USA and Russia are...",
-      "created_at": "2022-01-13T10:24:38.354Z",
-      "updated_at": "2022-01-13T10:24:38.354Z"
+      "id": 8,
+      "title": "Quo Vadis",
+      "published": "2022-01-23T12:02:56.139Z",
+      "category": "Politics"
     },
     {
-      "id": 359,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.351Z",
-      "updated_at": "2022-01-13T10:24:38.351Z"
+      "id": 7,
+      "title": "The Moving Toyshop",
+      "published": "2022-01-23T12:02:56.135Z",
+      "category": "Politics"
     },
     {
-      "id": 358,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.344Z",
-      "updated_at": "2022-01-13T10:24:38.344Z"
+      "id": 6,
+      "title": "Infinite Jest",
+      "published": "2022-01-23T12:02:56.132Z",
+      "category": "Politics"
     },
     {
-      "id": 357,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.340Z",
-      "updated_at": "2022-01-13T10:24:38.340Z"
-    },
-    {
-      "id": 356,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.336Z",
-      "updated_at": "2022-01-13T10:24:38.336Z"
-    },
-    {
-      "id": 355,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.332Z",
-      "updated_at": "2022-01-13T10:24:38.332Z"
-    },
-    {
-      "id": 354,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 353,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 352,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 351,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 350,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 349,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 348,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 347,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 346,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 345,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 344,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 343,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 342,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
-    },
-    {
-      "id": 341,
-      "title": "Covid-19 is a pandemic",
-      "body": "MyText",
-      "created_at": "2022-01-13T10:24:38.329Z",
-      "updated_at": "2022-01-13T10:24:38.329Z"
+      "id": 5,
+      "title": "The Lathe of Heaven",
+      "published": "2022-01-23T12:02:56.129Z",
+      "category": "Politics"
     }
   ]
 }
