@@ -6,16 +6,16 @@ const ArticleCard = ({ article }) => {
   const navigate = useNavigate();
 
   return (
-    <Card>
+    <Card sx={{ width: '100%', maxWidth: 700 }}>
       <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
         <CardContent>
-          <Typography gutterBottom variant="h2" data-cy="article-title">
+          <Typography gutterBottom variant="h3" data-cy="article-title">
             {article.title}
           </Typography>
-          <Typography gutterBottom variant="h5" data-cy="article-teaser">
+          <Typography gutterBottom variant="subtitle1" data-cy="article-teaser">
             {article.teaser}
           </Typography>
-          <Typography gutterBottom variant="h6" data-cy="article-created">
+          <Typography gutterBottom variant="caption" data-cy="article-created">
             {article.published}
           </Typography>
         </CardContent>
