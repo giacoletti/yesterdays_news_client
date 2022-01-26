@@ -1,9 +1,14 @@
 /* eslint-disable no-undef */
-describe("Visitor can chage application language", () => {
-  
+describe("Visitor can change application language", () => {
+  before(() => {
+    cy.intercept("GET", "/api/articles", {
+      body: { articles: [] },
+    });
+    cy.visit("/");
+  });
+
   describe('by choosing "swedish"', () => {
     before(() => {
-      cy.visit("/");
       cy.get("[data-cy=language-dropdown]").as("dropdown");
       cy.get("@dropdown").click();
       cy.contains("Swedish").click();
@@ -16,10 +21,8 @@ describe("Visitor can chage application language", () => {
 
   describe('by choosing "english"', () => {
     before(() => {
-      cy.visit("/");
       cy.get("[data-cy=language-dropdown]").as("dropdown");
       cy.get("@dropdown").click();
-      cy.contains("Swedish").click();
       cy.contains("Engelska").click();
     });
 

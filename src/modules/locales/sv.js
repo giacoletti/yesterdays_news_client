@@ -13,6 +13,5 @@ export const sv = {
     messages: {
       noArticles: "Vi har inga artiklar. Besök oss gärna vid et annat tillfälle."
     }
-
   }
 }
