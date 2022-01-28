@@ -1,8 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  Button,
+  Select,
+  MenuItem,
+  FormControl
+} from "@mui/material";
 
 const NavigationBar = () => {
+  const dispatch = useDispatch();
+  const { i18n, t } = useTranslation();
+  const handleLngChange = (event) => {
+    dispatch({ type: "SET_LANGUAGE", payload: event.target.value });
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -12,9 +28,9 @@ const NavigationBar = () => {
             variant="h6"
             component={Link}
             to="/"
-            sx={{ flexGrow: 1, textDecoration: 'none', color: 'white' }}
+            sx={{ flexGrow: 1, textDecoration: "none", color: "white" }}
           >
-            Yesterdays News
+            {t("appName")}
           </Typography>
           <Button
             data-cy="sports-view"
@@ -22,7 +38,7 @@ const NavigationBar = () => {
             to="/sports"
             color="inherit"
           >
-            Sports
+            {t("categories.sports")}
           </Button>
           <Button
             data-cy="politics-view"
@@ -30,7 +46,7 @@ const NavigationBar = () => {
             to="/politics"
             color="inherit"
           >
-            Politics
+            {t("categories.politics")}
           </Button>
           <Button
             data-cy="economy-view"
@@ -38,8 +54,19 @@ const NavigationBar = () => {
             to="/economy"
             color="inherit"
           >
-            Economy
+            {t("categories.economy")}
           </Button>
+          <FormControl sx={{ width: "130px" }}>
+            <Select
+              style={{ color: "white" }}
+              data-cy="language-dropdown"
+              onChange={handleLngChange}
+              defaultValue={i18n.language}
+            >
+              <MenuItem value={"sv"}>{t("controls.swedish")}</MenuItem>
+              <MenuItem value={"en"}>{t("controls.english")}</MenuItem>
+            </Select>
+          </FormControl>
         </Toolbar>
       </AppBar>
     </Box>
