@@ -37,10 +37,7 @@ describe("Visitor can see a single article", () => {
     );
   });
 
-  it("is expected to see article published date", () => {
-    cy.get("[data-cy=article-author]").should(
-      "contain",
-      "Fr. Eden Nitzsche"
-    );
+  it("is expected to see article author", () => {
+    cy.get("[data-cy=article-author]").should("contain", "Fr. Eden Nitzsche");
   });
 });
