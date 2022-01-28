@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ArticleCollection from "./components/ArticleCollection";
 import SingleArticle from "./components/SingleArticle";
 import NavigationBar from "./components/NavigationBar";
 import { Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+
 const App = () => {
+  const { locale } = useSelector(state => state);
   const { i18n } = useTranslation();
-  const handleLngChange = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
+
+  useEffect(() => {
+    i18n.changeLanguage(locale);
+  }, [locale]);
+
   return (
     <>
-      <NavigationBar handleLngChange={handleLngChange} />
+      <NavigationBar />
       <Routes>
         <Route path="/" element={<ArticleCollection />} />
         <Route path="/:category" element={<ArticleCollection />} />

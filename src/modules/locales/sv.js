@@ -1,6 +1,6 @@
 export const sv = {
   translation: {
-    appName: 'Gårdagens Nyheter',
+    appName: 'Gårdagens Blaska',
     categories: {
       economy: 'Ekonomi',
       politics: 'Politik',

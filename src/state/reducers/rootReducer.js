@@ -1,10 +1,10 @@
 const rootReducer = (state, action) => {
   switch (action.type) {
     case 'SET_LANGUAGE':
-      // return {
-      //   ...state,
-        
-      // }
+      return {
+        ...state,
+        locale: action.payload
+      }
     default:
       return state;
   }

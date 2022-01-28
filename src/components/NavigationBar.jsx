@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
 import {
   AppBar,
   Box,
@@ -9,14 +10,15 @@ import {
   Button,
   Select,
   MenuItem,
-  FormControl,
+  FormControl
 } from "@mui/material";
 
-const NavigationBar = ({handleLngChange}) => {
+const NavigationBar = () => {
+  const dispatch = useDispatch();
   const { i18n, t } = useTranslation();
-  // const handleLngChange = (event) => {
-  //   i18n.changeLanguage(event.target.value);
-  // };
+  const handleLngChange = (event) => {
+    dispatch({ type: "SET_LANGUAGE", payload: event.target.value });
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -59,10 +61,10 @@ const NavigationBar = ({handleLngChange}) => {
               style={{ color: "white" }}
               data-cy="language-dropdown"
               onChange={handleLngChange}
-              defaultValue={i18n.language} 
+              defaultValue={i18n.language}
             >
-              <MenuItem value={"sv"}>{t('controls.swedish')}</MenuItem>
-              <MenuItem value={"en"}>{t('controls.english')}</MenuItem>
+              <MenuItem value={"sv"}>{t("controls.swedish")}</MenuItem>
+              <MenuItem value={"en"}>{t("controls.english")}</MenuItem>
             </Select>
           </FormControl>
         </Toolbar>
