@@ -27,6 +27,9 @@ const SingleArticle = () => {
       <Typography gutterBottom variant="caption" data-cy="article-created">
         {article.published}
       </Typography>
+      <Typography gutterBottom variant="caption" data-cy="article-author">
+        {article.author}
+      </Typography>
     </Box>
   );
 };

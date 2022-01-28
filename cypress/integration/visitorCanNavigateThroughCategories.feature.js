@@ -184,7 +184,7 @@ describe("A user visiting the application can display articles by categories", (
         .children()
         .first()
         .within(() => {
-          cy.get("[data-cy=article-created]").should("contain", "2022-01-23T12:02:56.183Z");
+          cy.get("[data-cy=article-created]").should("contain", "January 28, 2022 12:31");
         });
     });
   });

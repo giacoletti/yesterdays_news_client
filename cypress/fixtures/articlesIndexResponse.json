@@ -4,113 +4,225 @@
       "id": 16,
       "title": "The Doors of Perception",
       "teaser": "I didn't work hard to make Ruby perfect for everyone, becaus...",
-      "published": "2022-01-23T12:02:56.183Z",
-      "category": "News"
+      "published": "January 28, 2022 12:31",
+      "category": "News",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 16,
+        "title": "The Doors of Perception",
+        "image": null
+      }
     },
     {
       "id": 15,
-      "title": "Arms and the Man",
+      "title": "Pale Kings and Princes",
       "teaser": "Actually, I didn't make the claim that Ruby follows the prin...",
-      "published": "2022-01-23T12:02:56.179Z",
-      "category": "News"
+      "published": "January 28, 2022 12:31",
+      "category": "News",
+      "user": "gustavo@rodriguez-block.biz",
+      "author": "Anja Champlin",
+      "image": {
+        "id": 15,
+        "title": "Pale Kings and Princes",
+        "image": null
+      }
     },
     {
       "id": 14,
-      "title": "A Time of Gifts",
-      "teaser": "Smart people underestimate the ordinarity of ordinary people...",
-      "published": "2022-01-23T12:02:56.175Z",
-      "category": "News"
+      "title": "Infinite Jest",
+      "teaser": "Everyone has an individual background. Someone may come from...",
+      "published": "January 28, 2022 12:31",
+      "category": "News",
+      "user": "brock@brakus.co",
+      "author": "Shanon Jacobs",
+      "image": {
+        "id": 14,
+        "title": "Infinite Jest",
+        "image": null
+      }
     },
     {
       "id": 13,
-      "title": "When the Green Woods Laugh",
-      "teaser": "Smart people underestimate the ordinarity of ordinary people...",
-      "published": "2022-01-23T12:02:56.171Z",
-      "category": "News"
+      "title": "The World, the Flesh and the Devil",
+      "teaser": "Man is driven to create; I know I really love to create thin...",
+      "published": "January 28, 2022 12:31",
+      "category": "News",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 13,
+        "title": "The World, the Flesh and the Devil",
+        "image": null
+      }
     },
     {
       "id": 12,
-      "title": "I Will Fear No Evil",
-      "teaser": "Language designers want to design the perfect language. They...",
-      "published": "2022-01-23T12:02:56.166Z",
-      "category": "Economy"
+      "title": "Great Work of Time",
+      "teaser": "I hope to see Ruby help every programmer in the world to be ...",
+      "published": "January 28, 2022 12:31",
+      "category": "Economy",
+      "user": "gustavo@rodriguez-block.biz",
+      "author": "Anja Champlin",
+      "image": {
+        "id": 12,
+        "title": "Great Work of Time",
+        "image": null
+      }
     },
     {
       "id": 11,
-      "title": "Blood's a Rover",
-      "teaser": "The orthogonal features, when combined, can explode into com...",
-      "published": "2022-01-23T12:02:56.160Z",
-      "category": "Economy"
+      "title": "Paths of Glory",
+      "teaser": "Most of the tasks we do are for humans. For example, a tax c...",
+      "published": "January 28, 2022 12:31",
+      "category": "Economy",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 11,
+        "title": "Paths of Glory",
+        "image": null
+      }
     },
     {
       "id": 10,
-      "title": "The Man Within",
-      "teaser": "I believe consistency and orthogonality are tools of design,...",
-      "published": "2022-01-23T12:02:56.156Z",
-      "category": "Economy"
+      "title": "The Curious Incident of the Dog in the Night-Time",
+      "teaser": "Imagine you are writing an email. You are in front of the co...",
+      "published": "January 28, 2022 12:31",
+      "category": "Economy",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 10,
+        "title": "The Curious Incident of the Dog in the Night-Time",
+        "image": null
+      }
     },
     {
       "id": 9,
-      "title": "Bury My Heart at Wounded Knee",
-      "teaser": "Because of the Turing completeness theory, everything one Tu...",
-      "published": "2022-01-23T12:02:56.143Z",
-      "category": "Economy"
+      "title": "The Heart Is Deceitful Above All Things",
+      "teaser": "It is not the responsibility of the language to force good l...",
+      "published": "January 28, 2022 12:31",
+      "category": "Economy",
+      "user": "gustavo@rodriguez-block.biz",
+      "author": "Anja Champlin",
+      "image": {
+        "id": 9,
+        "title": "The Heart Is Deceitful Above All Things",
+        "image": null
+      }
     },
     {
       "id": 8,
-      "title": "Quo Vadis",
-      "teaser": "Man is driven to create; I know I really love to create thin...",
-      "published": "2022-01-23T12:02:56.139Z",
-      "category": "Politics"
+      "title": "The Torment of Others",
+      "teaser": "It is not the responsibility of the language to force good l...",
+      "published": "January 28, 2022 12:31",
+      "category": "Politics",
+      "user": "brock@brakus.co",
+      "author": "Shanon Jacobs",
+      "image": {
+        "id": 8,
+        "title": "The Torment of Others",
+        "image": null
+      }
     },
     {
       "id": 7,
-      "title": "The Moving Toyshop",
-      "teaser": "The orthogonal features, when combined, can explode into com...",
-      "published": "2022-01-23T12:02:56.135Z",
-      "category": "Politics"
+      "title": "Time To Murder And Create",
+      "teaser": "Ruby inherited the Perl philosophy of having more than one w...",
+      "published": "January 28, 2022 12:31",
+      "category": "Politics",
+      "user": "gustavo@rodriguez-block.biz",
+      "author": "Anja Champlin",
+      "image": {
+        "id": 7,
+        "title": "Time To Murder And Create",
+        "image": null
+      }
     },
     {
       "id": 6,
-      "title": "Infinite Jest",
+      "title": "Let Us Now Praise Famous Men",
       "teaser": "Imagine you are writing an email. You are in front of the co...",
-      "published": "2022-01-23T12:02:56.132Z",
-      "category": "Politics"
+      "published": "January 28, 2022 12:31",
+      "category": "Politics",
+      "user": "brock@brakus.co",
+      "author": "Shanon Jacobs",
+      "image": {
+        "id": 6,
+        "title": "Let Us Now Praise Famous Men",
+        "image": null
+      }
     },
     {
       "id": 5,
-      "title": "The Lathe of Heaven",
-      "teaser": "The orthogonal features, when combined, can explode into com...",
-      "published": "2022-01-23T12:02:56.129Z",
-      "category": "Politics"
+      "title": "O Jerusalem!",
+      "teaser": "Most of the tasks we do are for humans. For example, a tax c...",
+      "published": "January 28, 2022 12:31",
+      "category": "Politics",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 5,
+        "title": "O Jerusalem!",
+        "image": null
+      }
     },
     {
       "id": 4,
-      "title": "A Many-Splendoured Thing",
-      "teaser": "I didn't work hard to make Ruby perfect for everyone, becaus...",
-      "published": "2022-01-23T12:02:56.125Z",
-      "category": "Sports"
+      "title": "The Sun Also Rises",
+      "teaser": "From the viewpoint of what you can do, therefore, languages ...",
+      "published": "January 28, 2022 12:31",
+      "category": "Sports",
+      "user": "brock@brakus.co",
+      "author": "Shanon Jacobs",
+      "image": {
+        "id": 4,
+        "title": "The Sun Also Rises",
+        "image": null
+      }
     },
     {
       "id": 3,
-      "title": "The Doors of Perception",
-      "teaser": "Everyone has an individual background. Someone may come from...",
-      "published": "2022-01-23T12:02:56.122Z",
-      "category": "Sports"
+      "title": "The Painted Veil",
+      "teaser": "Because of the Turing completeness theory, everything one Tu...",
+      "published": "January 28, 2022 12:31",
+      "category": "Sports",
+      "user": "gustavo@rodriguez-block.biz",
+      "author": "Anja Champlin",
+      "image": {
+        "id": 3,
+        "title": "The Painted Veil",
+        "image": null
+      }
     },
     {
       "id": 2,
-      "title": "The Millstone",
-      "teaser": "Ruby inherited the Perl philosophy of having more than one w...",
-      "published": "2022-01-23T12:02:56.119Z",
-      "category": "Sports"
+      "title": "Surprised by Joy",
+      "teaser": "In our daily lives as programmers, we process text strings a...",
+      "published": "January 28, 2022 12:31",
+      "category": "Sports",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 2,
+        "title": "Surprised by Joy",
+        "image": null
+      }
     },
     {
       "id": 1,
-      "title": "The Grapes of Wrath",
-      "teaser": "Often people, especially computer engineers, focus on the ma...",
-      "published": "2022-01-23T12:02:56.115Z",
-      "category": "Sports"
+      "title": "Mother Night",
+      "teaser": "People are different. People choose different criteria. But ...",
+      "published": "January 28, 2022 12:31",
+      "category": "Sports",
+      "user": "rex@flatley-feest.io",
+      "author": "Fr. Eden Nitzsche",
+      "image": {
+        "id": 1,
+        "title": "Mother Night",
+        "image": null
+      }
     }
   ]
 }

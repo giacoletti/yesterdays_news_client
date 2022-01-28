@@ -24,10 +24,23 @@ describe("Visitor can see a single article", () => {
   });
 
   it("is expected to see article body", () => {
-    cy.get("[data-cy=article-body]").should("contain", "Often people, especially computer engineers, focus on the machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines.");
+    cy.get("[data-cy=article-body]").should(
+      "contain",
+      "Often people, especially computer engineers, focus on the machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines."
+    );
   });
 
   it("is expected to see article published date", () => {
-    cy.get("[data-cy=article-created]").should("contain", "2022-01-23T12:02:56.183Z");
+    cy.get("[data-cy=article-created]").should(
+      "contain",
+      "January 28, 2022 12:31"
+    );
+  });
+
+  it("is expected to see article published date", () => {
+    cy.get("[data-cy=article-author]").should(
+      "contain",
+      "Fr. Eden Nitzsche"
+    );
   });
 });
