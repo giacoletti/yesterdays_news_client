@@ -1,51 +1,30 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import Articles from "../modules/Articles";
-import ArticleCard from "./ArticleCard";
-import { Grid, Container, Alert } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import { Box } from "@mui/material";
+import ArticleCss from "../styles/ArticleCss.css";
+import CommercialCard from "./CommercialCardList";
+import ArticleCardList from "./ArticleCardList";
+import SideArticleList from "./SideArticleList";
+import CommercialCardListRight from "./CommercialCardListRight";
+import CommercialCardList from "./CommercialCardList";
 
 const ArticleCollection = () => {
-  const { category } = useParams();
-  const [articles, setArticles] = useState([]);
-  const [message, setMessage] = useState();
-  const { t } = useTranslation();
-
-  const fetchArticles = async () => {
-    const data = await Articles.index(category);
-    if (data.message || data.length === 0) {
-      setMessage(t("messages.noArticles"));
-    } else {
-      setArticles(data);
-    }
-  };
-  useEffect(() => {
-    fetchArticles();
-  }, [category]);
-
-  const collectionOfArticles = articles.map((article) => {
-    return (
-      <Grid item key={article.id} md={12}>
-        <ArticleCard article={article} />
-      </Grid>
-    );
-  });
-
   return (
-    <Container sx={{ padding: "20px 0" }}>
-      <Grid container spacing={4} data-cy="article-collection">
-        {collectionOfArticles}
-      </Grid>
-      {articles.length === 0 && message && (
-        <Alert
-          data-cy="flash-message"
-          severity="info"
-          sx={{ margin: "20px 0" }}
-        >
-          {message}
-        </Alert>
-      )}
-    </Container>
+    <Box class="main_page">
+      <Box class="boxComLeft" id="Commercial_feed">Sponsored by:
+        <CommercialCard />
+      </Box>
+      <Box class="boxArticle" id="Main_article_feed">
+        <ArticleCardList />
+      </Box>
+
+      <Box class="boxComRight" id="Commercial_feed">Sponsored by:
+        <CommercialCardListRight />
+      </Box>
+
+      <Box class="boxArticleSide" id="Right_article_feed">This might interest you:
+        <SideArticleList />
+      </Box>
+    </Box>
   );
 };
 

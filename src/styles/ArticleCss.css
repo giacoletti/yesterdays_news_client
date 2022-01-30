@@ -1,0 +1,77 @@
+.title {
+  margin-top: 60px;
+}
+
+.main_page {
+  background: #ffffff;
+}
+
+.boxComLeft {
+  position: sticky;
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 60px;
+  padding: 5px;
+  border: 2px solid grey;
+  background: #ffffff;
+  overflow: hidden;
+  height: 100%;
+}
+
+.boxComRight {
+  float: right;
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 60px;
+  padding: 5px;
+  border: 2px solid grey;
+  background: #ffffff;
+  overflow: hidden;
+  height: 100%;
+  margin-inline: auto;
+}
+.boxArticleSide {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4);
+  float: right;
+  width: 500px;
+  margin-top: 0px;
+  padding: 15px;
+  border: 2px solid grey;
+  background: #ffffff;
+  margin-top: 0px;
+  transform: scale(0.9);
+}
+
+.articleImage {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 500px;
+  transform: scale(1);
+}
+
+.boxArticle {
+  float: left;
+  width: 840px;
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 5px;
+  /* border: 2px solid blue; */
+}
+
+.articleFont {
+  --font: "EB Garamond", serif;
+  --font-title: "Playfair Display", serif;
+  --font-sans-serif: "Manrope", sans-serif;
+  --black: #1c1f33;
+  --black--acc: #222;
+  --gray: #eee;
+  --gray-1: #ededed;
+  /* 
+  doesn't look good. Tried to aplly to Article Card as class. 
+  class="articleFont"
+  */
+}

@@ -5,6 +5,7 @@ import NavigationBar from "./components/NavigationBar";
 import { Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
+import Title from "./components/Title"
 
 const App = () => {
   const { locale } = useSelector(state => state);
@@ -16,6 +17,8 @@ const App = () => {
 
   return (
     <>
+      <Title class="title" />
+      <br></br>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<ArticleCollection />} />

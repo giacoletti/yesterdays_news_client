@@ -4,7 +4,8 @@ export const en = {
     categories: {
       economy: 'Economy',
       politics: 'Politics',
-      sports: 'Sports'
+      sports: 'Sports',
+      latest: 'News'
     }, 
     controls: {
       swedish: "Swedish",
