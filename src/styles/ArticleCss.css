@@ -34,7 +34,14 @@
   background: #ffffff;
   margin-top: 60px;
   transform: scale(1);
+}
 
+.articleImage {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 500px;
+  transform: scale(1);
 }
 
 .boxArticle {

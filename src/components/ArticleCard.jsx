@@ -1,6 +1,14 @@
 import React from "react";
-import { Typography, CardContent, Card, CardActionArea, CardMedia } from "@mui/material";
+import {
+  Typography,
+  CardContent,
+  Card,
+  CardActionArea,
+  CardMedia,
+} from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import RandomPicturesArticle from "../modules/Image/RandomPicturesArticle";
+import { FormatAlignJustify } from "@mui/icons-material";
 
 const ArticleCard = ({ article }) => {
   const navigate = useNavigate();
@@ -10,9 +18,8 @@ const ArticleCard = ({ article }) => {
       <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          height={FormatAlignJustify}
+          image={RandomPicturesArticle.getPicture()}
         />
         <CardContent>
           <Typography gutterBottom variant="h3" data-cy="article-title">

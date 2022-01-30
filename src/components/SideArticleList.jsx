@@ -3,11 +3,7 @@ import { useParams } from "react-router-dom";
 import Articles from "../modules/Articles";
 import ArticleCard from "./ArticleCard";
 import { Grid, Container, Alert } from "@mui/material";
-import { Box } from "@mui/material";
 import ArticleCss from "../styles/ArticleCss.css";
-
-//The function needs to be updated with relevant naming to fetch 
-//different objects. I.e fetchAdd, setAdd etc.
 
 const SideArticleList = () => {
   const { category } = useParams();
@@ -47,3 +43,4 @@ const SideArticleList = () => {
 };
 
 export default SideArticleList;
+
