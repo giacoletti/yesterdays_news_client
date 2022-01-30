@@ -14,7 +14,7 @@ describe("Visitor can visit the application and", () => {
     });
 
     it("is expected to display Yesterday News Header", () => {
-      cy.get("[data-cy=header").should("contain", "Yesterdays News");
+      cy.get("[data-cy=title").should("contain", "Yesterdays News");
     });
 
     it("is expected to see a collection of articles", () => {

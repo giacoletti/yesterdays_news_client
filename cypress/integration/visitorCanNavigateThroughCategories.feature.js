@@ -160,7 +160,7 @@ describe("A user visiting the application can display articles by categories", (
         fixture: "articlesIndexResponse.json",
       }).as("getArticles");
       cy.get("[data-cy=economy-view]").click();
-      cy.get("[data-cy=header]").click();
+      cy.get("[data-cy=title]").click();
     });
 
     it("is expected to make a GET request to the API", () => {
