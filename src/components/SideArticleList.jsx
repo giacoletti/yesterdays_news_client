@@ -10,7 +10,6 @@ const SideArticleList = () => {
   const [articles, setArticles] = useState([]);
   const [message, setMessage] = useState();
 
-  //fetchAdd
   const fetchArticles = async () => {
     const data = await Articles.index(category);
     if (data.message || data.length === 0) {

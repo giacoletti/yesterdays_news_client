@@ -1,8 +1,13 @@
+.title {
+  margin-top: 2000px;
+}
+
 .main_page {
   background: #ffffff;
 }
 
 .boxComLeft {
+  position: sticky;
   float: left;
   width: 200px;
   margin-left: 10px;
@@ -24,16 +29,20 @@
   background: #ffffff;
   overflow: hidden;
   height: 100%;
+  margin-inline: auto;
 }
 .boxArticleSide {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4);
   float: right;
   width: 500px;
   margin-top: 0px;
   padding: 15px;
   border: 2px solid grey;
   background: #ffffff;
-  margin-top: 60px;
-  transform: scale(1);
+  margin-top: 0px;
+  transform: scale(0.9);
 }
 
 .articleImage {

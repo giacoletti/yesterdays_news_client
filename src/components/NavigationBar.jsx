@@ -10,7 +10,7 @@ import {
   Button,
   Select,
   MenuItem,
-  FormControl
+  FormControl,
 } from "@mui/material";
 
 const NavigationBar = () => {
@@ -21,17 +21,17 @@ const NavigationBar = () => {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
-          <Typography
-            data-cy="header"
-            variant="h6"
+        <Button
+            data-cy="latest-view"
             component={Link}
             to="/"
-            sx={{ flexGrow: 1, textDecoration: "none", color: "white" }}
+            color="inherit"
           >
-            {t("appName")}
-          </Typography>
+            {t("categories.latest")}
+          </Button>
+
           <Button
             data-cy="sports-view"
             component={Link}
@@ -56,7 +56,7 @@ const NavigationBar = () => {
           >
             {t("categories.economy")}
           </Button>
-          <FormControl sx={{ width: "130px" }}>
+          <FormControl sx={{ width: "130px", alignItems: "end"}}>
             <Select
               style={{ color: "white" }}
               data-cy="language-dropdown"

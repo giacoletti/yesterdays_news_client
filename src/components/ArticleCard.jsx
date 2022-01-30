@@ -14,7 +14,7 @@ const ArticleCard = ({ article }) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ width: "100%", maxWidth: 700 }}>
+    <Card sx={{ width: "100%", maxWidth: 800 }}>
       <CardActionArea onClick={() => navigate(`/articles/${article.id}`)}>
         <CardMedia
           component="img"
