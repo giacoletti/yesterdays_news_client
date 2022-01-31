@@ -1,17 +1,15 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ArticleCss from "../styles/ArticleCss.css";
-import CommercialCard from "./CommercialCardList";
+import CommercialCardList from "./CommercialCardList";
 import ArticleCardList from "./ArticleCardList";
 import SideArticleList from "./SideArticleList";
 import CommercialCardListRight from "./CommercialCardListRight";
-import CommercialCardList from "./CommercialCardList";
 
 const ArticleCollection = () => {
   return (
     <Box class="main_page">
       <Box class="boxComLeft" id="Commercial_feed">Sponsored by:
-        <CommercialCard />
+        <CommercialCardList />
       </Box>
       <Box class="boxArticle" id="Main_article_feed">
         <ArticleCardList />

@@ -18,7 +18,6 @@ const App = () => {
   return (
     <>
       <Title class="title" />
-      <br></br>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<ArticleCollection />} />

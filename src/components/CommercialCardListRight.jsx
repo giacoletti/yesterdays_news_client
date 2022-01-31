@@ -1,5 +1,4 @@
 import React from "react";
-import ArticleCss from "../styles/ArticleCss.css";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { Grid } from "@mui/material";
