@@ -15,7 +15,7 @@ describe("Visitor can change application language", () => {
     });
 
     it("is expected to display application name in Swedish", () => {
-      cy.get("[data-cy=header]").should("contain.text", "Gårdagens Blaska");
+      cy.get("[data-cy=title]").should("contain.text", "Gårdagens Blaska");
     });
   });
 
@@ -27,7 +27,7 @@ describe("Visitor can change application language", () => {
     });
 
     it("is expected to display application name in English", () => {
-      cy.get("[data-cy=header]").should("contain.text", "Yesterdays News");
+      cy.get("[data-cy=title]").should("contain.text", "Yesterdays News");
     });
   });
 });
