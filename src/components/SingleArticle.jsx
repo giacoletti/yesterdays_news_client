@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { Typography, CardMedia } from "@mui/material";
 import Box from "@mui/material/Box";
 import CommercialCardListRight from "./CommercialCardListRight";
-import CommercialCard from "./CommercialCardList";
+import CommercialCardList from "./CommercialCardList";
 
 const SingleArticle = () => {
   const [article, setArticle] = useState({});
@@ -23,7 +23,7 @@ const SingleArticle = () => {
     <Box class="main_page">
       <Box class="boxComLeftArt" id="Commercial_feed">
         Sponsored by:
-        <CommercialCard />
+        <CommercialCardList />
       </Box>
       <Box class="singleArt" sx={{ m: 10 }}>
         <Typography gutterBottom variant="h3" data-cy="article-title">
