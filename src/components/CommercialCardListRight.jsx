@@ -4,9 +4,6 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import { Grid } from "@mui/material";
 
-//The function needs to be updated with relevant naming to fetch
-//different objects. I.e fetchAdd, setAdd etc.
-
 const CommercialCardListRight = () => {
   return (
     <Grid>
