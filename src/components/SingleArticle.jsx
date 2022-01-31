@@ -37,10 +37,9 @@ const SingleArticle = () => {
           component="img"
           image={RandomPicturesArticle.getPicture()}
         />
-        <Typography gutterBottom variant="subtitle1" data-cy="article-body" sx={{ paddingTop: "20px" }}>
+        <Typography gutterBottom variant="subtitle1" data-cy="article-body" sx={{ paddingTop: "20px", paddingBottom: "20px" }}>
           {article.body}
         </Typography>
-        <br></br>
         <Typography
           gutterBottom
           variant="caption"
