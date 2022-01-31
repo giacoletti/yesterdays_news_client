@@ -29,16 +29,16 @@ const SingleArticle = () => {
         <Typography gutterBottom variant="h3" data-cy="article-title">
           {article.title}
         </Typography>
+        <Typography gutterBottom variant="caption" data-cy="article-created">
+          {article.published}
+        </Typography>
         <CardMedia
           class="articleImage"
           component="img"
           image={RandomPicturesArticle.getPicture()}
         />
-        <Typography gutterBottom variant="subtitle1" data-cy="article-body">
+        <Typography gutterBottom variant="subtitle1" data-cy="article-body" sx={{ paddingTop: "20px" }}>
           {article.body}
-        </Typography>
-        <Typography gutterBottom variant="caption" data-cy="article-created">
-          {article.published}
         </Typography>
         <br></br>
         <Typography
