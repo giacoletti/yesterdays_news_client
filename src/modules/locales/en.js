@@ -8,8 +8,8 @@ export const en = {
       latest: 'News'
     }, 
     controls: {
-      swedish: "Swedish",
-      english: "English"
+      swedish: "🇸🇪 Swedish",
+      english: "🇬🇧 English"
     },
     messages: {
       noArticles: "We don't have articles available at the moment, please try again later."

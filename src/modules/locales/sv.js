@@ -8,8 +8,8 @@ export const sv = {
       latest: 'Senaste'
     }, 
     controls: {
-      swedish: "Svenska",
-      english: "Engelska"
+      swedish: "🇸🇪 Svenska",
+      english: "🇬🇧 Engelska"
     },
     messages: {
       noArticles: "Vi har inga artiklar. Besök oss gärna vid ett annat tillfälle."

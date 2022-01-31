@@ -6,11 +6,10 @@ import {
   AppBar,
   Box,
   Toolbar,
-  Typography,
   Button,
   Select,
   MenuItem,
-  FormControl,
+  FormControl
 } from "@mui/material";
 
 const NavigationBar = () => {
@@ -21,14 +20,12 @@ const NavigationBar = () => {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky">
+      <AppBar
+        position="sticky"
+        sx={{ backgroundColor: "white", color: "black", borderBottom: "solid black 5px" }}
+      >
         <Toolbar>
-        <Button
-            data-cy="latest-view"
-            component={Link}
-            to="/"
-            color="inherit"
-          >
+          <Button data-cy="latest-view" component={Link} to="/" color="inherit">
             {t("categories.latest")}
           </Button>
 
@@ -56,9 +53,8 @@ const NavigationBar = () => {
           >
             {t("categories.economy")}
           </Button>
-          <FormControl sx={{ width: "130px", alignItems: "end"}}>
+          <FormControl sx={{ width: "140px", position: "absolute", right: 10 }}>
             <Select
-              style={{ color: "white" }}
               data-cy="language-dropdown"
               onChange={handleLngChange}
               defaultValue={i18n.language}
