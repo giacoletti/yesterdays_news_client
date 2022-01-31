@@ -18,6 +18,18 @@
   overflow: hidden;
   height: 100%;
 }
+.boxComLeftArt {
+  position: sticky;
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 60px;
+  padding: 5px;
+  border: 2px solid grey;
+  background: #ffffff;
+  overflow: hidden;
+  height: 100%;
+}
 
 .boxComRight {
   float: right;
@@ -30,6 +42,18 @@
   overflow: hidden;
   height: 100%;
   margin-inline: auto;
+}
+.boxComRightArt {
+  float: right;
+  position:fixed;
+  width: 200px;
+  margin-left:1600px;
+  margin-top: -400px;
+  padding: 5px;
+  border: 2px solid grey;
+  background: #ffffff;
+  overflow: hidden;
+  height: 100%;
 }
 .boxArticleSide {
   display: grid;
@@ -59,7 +83,15 @@
   margin-left: 10px;
   margin-top: 50px;
   padding: 5px;
-  /* border: 2px solid blue; */
+}
+.singleArt {
+  float: justify;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500;
+  padding: 15px;
+  max-width: 60%;
 }
 
 .articleFont {
